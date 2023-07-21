@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body>
+
     <header class="header content-section">
       <nav>
         <ul class="menu__list">
@@ -17,10 +18,10 @@
             <a class="menu__list-link">главная</a>
           </li>
           <li class="menu__list-item">
-            <a href="#0" class="menu__list-link">посмотреть лоты</a>
+            <a href="#0" class="menu__list-link menu__list-item-unactive">посмотреть лоты</a>
           </li>
           <li class="menu__list-item">
-            <a href="#0" class="menu__list-link">об аукционе</a>
+            <a href="#0" class="menu__list-link menu__list-item-unactive">об аукционе</a>
           </li>
         </ul>
       </nav>
@@ -44,7 +45,10 @@
         </ul>
       </div>
     </header>
+
     <main class="main">
+      
+
       <section class="cover content-section">
         <h1 cover-title>
           <span class="aligned-text aligned-text-left">он<span class="dubl-spacing">о</span></span>
@@ -60,30 +64,36 @@
 
       <section class="lots content-section">
         <h3 class="lots_heading">Лоты</h3>
-        <div class="lots-card-list">
-          <a class="card_link" href="#">
-            <article class="card card-type-film overlay">
-              <h4 class="card-title">Фильм режиссёра, который бросил киношколу</h4>
-              <div class="card-text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</div>
-              <div class="overlay"></div>
-            </article>
-          </a>
-          <a class="card_link" href="#">
-            <article class="card card-type-book">
-              <h4 class="card-title">Книга, где описан один скучный день из жизни рекламного агента</h4>
-              <div class="card-text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</div>
-              <div class="overlay"></div>
-            </article>
-          </a>
-          <a class="card_link" href="#">
-            <article class="card card-type-picture">
-              <h4 class="card-title">Картина, которую повторит даже 5-летний сын маминой подруги</h4>
-              <div class="card-text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков… Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</div>
-              <div class="overlay"></div>
-            </article>
-          </a>
-        </div>
-        <a class="lots-look-more-link" href="#">посмотреть больше</a>
+        <ul class="lots-card-list">
+          <li>
+            <a class="card_link" href="#">
+              <article class="card card-type-film overlay">
+                <h4 class="card-title">Фильм режиссёра, который бросил киношколу</h4>
+                <div class="card-text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</div>
+                <div class="overlay"></div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a class="card_link" href="#">
+              <article class="card card-type-book">
+                <h4 class="card-title">Книга, где описан один скучный день из жизни рекламного агента</h4>
+                <div class="card-text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</div>
+                <div class="overlay"></div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a class="card_link" href="#">
+              <article class="card card-type-picture">
+                <h4 class="card-title">Картина, которую повторит даже 5-летний сын маминой подруги</h4>
+                <div class="card-text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков… Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</div>
+                <div class="overlay"></div>
+              </article>
+            </a>
+         </li>
+        </ul>
+        <a class="lots-look-more-link underlined" href="#">посмотреть больше</a>
       </section>
 
       <section class="about  content-section">
@@ -101,6 +111,8 @@
             <div class="about-text">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми.</div>
         </div>
       </section>
+
+
     </main>
     <footer class="footer content-section">
       <div class="footer-contacts_list">
@@ -118,14 +130,14 @@
       </div>
       <nav class="footer-nav">
         <ul class="footer-menu__list">
-          <li class="footer-menu__list-item menu__list-item-active">
-            <a class="footer-menu__list-link">главная</a>
+          <li class="footer-menu__list-item ">
+            <a>главная</a>
           </li>
           <li class="footer-menu__list-item">
-            <a href="#0" class="footer-menu__list-link">посмотреть лоты</a>
+            <a href="#0" class="footer-menu__list-link underlined">посмотреть лоты</a>
           </li>
           <li class="footer-menu__list-item">
-            <a href="#0" class="footer-menu__list-link">об аукционе</a>
+            <a href="#0" class="footer-menu__list-link underlined">об аукционе</a>
           </li>
         </ul>
       </nav>
@@ -149,9 +161,6 @@
               />
         </a>
       </div>
-
-
     </footer>
-
   </body>
 </html>
