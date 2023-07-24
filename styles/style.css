@@ -343,7 +343,7 @@ body {
 
 .footer {
   height: 109px;
-  width: 1340px;
+  max-width: 1340px;
   width: 100%;
   padding-top: 178px;
   padding-left: 50px;
