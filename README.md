@@ -1,1 +1,1 @@
-git@github.com:talfril/ono-tebe-nado
+https://github.com/talfril/ono-tebe-nado.git
