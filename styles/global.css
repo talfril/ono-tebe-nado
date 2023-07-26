@@ -32,3 +32,8 @@ a {
 img {
   width: 100%;
 }
+
+address,
+button {
+  font-style: normal;
+}
