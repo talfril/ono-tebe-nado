@@ -1,16 +1,6 @@
-body {
-  margin: 0 auto;
-  padding: 0;
-  max-width: 1440px;
-  background-color: #fff;
-  font-style: normal;
-  font-weight: 400;
-}
-
 .header {
-  height: 109px;
   width: 100%;
-  padding: 92px 50px 200px 50px;
+  padding: 92px 50px 92px 50px;
   display: grid;
   grid-template-columns: 3fr 1fr 3fr;
   justify-items: start;
@@ -20,7 +10,6 @@ body {
 .menu__list {
   display: flex;
   list-style-type: circle;
-  grid-column: 1;
   padding-left: 2px;
   padding-right: 1px;
   gap: 32px;
@@ -30,20 +19,15 @@ body {
   list-style-position: outside;
 }
 
-.link_active {
+.link_wihtout-bullit {
   text-decoration: none;
   list-style-type: none;
-}
-
-.menu__list-link-unactive {
-  border-bottom: 1px #000000 solid;
 }
 
 .menu__list-link {
   color: #000000;
   font-size: 18px;
   line-height: normal;
-  text-decoration: none;
 }
 
 .header__logo {
@@ -74,7 +58,7 @@ body {
   padding-left: 50px;
 }
 
-.adress {
+.contacts__address {
   font-style: normal;
   max-width: 240px;
 }
@@ -90,8 +74,8 @@ body {
 
 .cover {
   margin: 0;
-  min-width: 1440px;
-  min-height: 757px;
+  max-width: 1440px;
+  max-height: 757px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -118,6 +102,9 @@ body {
   padding-left: 49px;
   padding-top: 166px;
   padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 }
 
 .aligned-text {
@@ -128,13 +115,17 @@ body {
 }
 
 .aligned-text-center {
-  margin-top: 13px;
   text-align: center;
+  /*если убрать этот отступ, элемент выравнивается по центру, а это отличается 
+  от макета. Именно строка "тебе" в макете имеет индивидуальный отступ в 60px.
+  Перенесла отступ вправо в отдельный класс "step-to-leftside" (ниже) */
+}
+
+.step-to-leftside {
   margin-right: 30px;
 }
 
 .aligned-text-right {
-  margin-top: 5px;
   text-align: right;
 }
 
@@ -172,6 +163,7 @@ body {
   background-color: transparent;
   border: 1px solid #fff;
   width: 257px;
+  font-family: Raleway, sans-serif;
 }
 
 .lots {
@@ -203,7 +195,6 @@ body {
 }
 
 .card {
-  min-width: 430px;
   min-height: 450px;
   color: #fff;
   background-repeat: no-repeat;
@@ -255,7 +246,7 @@ body {
 }
 
 .about {
-  padding: 180px 50px 100px 35px;
+  padding: 180px 50px 5px 35px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 25px;
@@ -299,14 +290,13 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   padding-top: 104px;
+  padding-bottom: 70px;
 }
 
 .about-text {
   max-width: 885px;
-  max-height: 96px;
   color: #000;
   font-size: 20px;
-  padding-top: 72px;
 }
 
 .footer {
@@ -327,13 +317,13 @@ body {
 .footer-menu__list {
   display: flex;
   flex-direction: column;
-  width: 388px;
+  max-width: 388px;
   font-size: 18px;
   list-style-type: none;
   text-align: center;
   grid-column: 2;
-  padding-left: 65px;
-  justify-self: start;
+  padding-left: 60px;
+  justify-self: center;
 }
 
 .footer-social-list {
